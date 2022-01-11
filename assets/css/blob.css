@@ -1,0 +1,21 @@
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.blob{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.blob:nth-child(odd){
+    filter: blur(50px);
+}
+
+.blob:nth-child(2n){
+    filter: blur(10px);
+}
